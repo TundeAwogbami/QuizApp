@@ -1,12 +1,5 @@
 # Agentic Engineering 101 — Interactive Quiz Application
 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![HTML5](https://img.shields.io/badge/HTML5-Semantic-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
-[![CSS3](https://img.shields.io/badge/CSS3-Modern_Variables-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![Dependencies](https://img.shields.io/badge/Dependencies-Zero-brightgreen)](#technology-stack)
-[![Accessibility](https://img.shields.io/badge/Accessibility-WCAG_2.1_AA-blue)](#accessibility--usability)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
 An interactive, responsive educational quiz application designed to test and reinforce fundamental principles of **agentic software engineering**, prompt writing, project instruction files (such as `AGENTS.md`), task decomposition, and code verification.
 
 Built from the ground up with **vanilla web technologies** (HTML5, CSS3, ES6+ JavaScript), this project adheres to strict design constraints: a bespoke **soft pastel blue** palette, lightweight zero-framework architecture, robust state management, and high standards of accessibility.

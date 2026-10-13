@@ -3,7 +3,6 @@
 **Project:** Agentic Engineering 101 — Interactive Quiz Application  
 **Developer:** [Tunde Awogbami](https://github.com/TundeAwogbami)  
 **Repository:** [https://github.com/TundeAwogbami/QuizApp](https://github.com/TundeAwogbami/QuizApp)  
-**Environment:** Antigravity IDE • Windows 11 • PowerShell  
 **Stack:** Vanilla HTML5, CSS3, ES6+ JavaScript, Git  
 
 ---
@@ -243,7 +242,6 @@ QUIZ_QUESTIONS.forEach(q => Object.freeze(q.options));
 #### Actions Taken:
 1. Initialized git repository on branch `main`.
 2. Staged all project files:
-   - `QuizApp.txt`
    - `index.html`
    - `questions.js`
    - `script.js`
@@ -251,8 +249,6 @@ QUIZ_QUESTIONS.forEach(q => Object.freeze(q.options));
 3. Executed baseline commit:
    ```bash
    git commit -m "First Version of Agentic Engineering QuizApp"
-   # Commit Hash: 125262356687b0bdad2435d380454f5c03edf381
-   # Author: tunde <oladipupo.jayden@gmail.com>
    # Date: Tue Oct 13 01:01:24 2026 +0100
    ```
 4. Configured GitHub remote:
@@ -276,7 +272,6 @@ QUIZ_QUESTIONS.forEach(q => Object.freeze(q.options));
 ## Architectural Decision Records (ADRs)
 
 ### ADR 01: Vanilla Web Stack vs. Modern Frontend Frameworks
-- **Status:** Accepted
 - **Context:** The application requirements specified no React, Vue, or build tooling.
 - **Decision:** Build using semantic HTML5, modern CSS3 with custom properties, and ES6+ JavaScript.
 - **Consequences:**
@@ -284,7 +279,6 @@ QUIZ_QUESTIONS.forEach(q => Object.freeze(q.options));
   - *Trade-offs:* Manual DOM updates required instead of reactive virtual DOM diffing.
 
 ### ADR 02: Separation of Question Data into `questions.js`
-- **Status:** Accepted
 - **Context:** Keeping question content inside `script.js` creates tight coupling and makes curriculum updates cumbersome.
 - **Decision:** Extract questions into `questions.js` as an immutable array `QUIZ_QUESTIONS`.
 - **Consequences:**
@@ -292,7 +286,6 @@ QUIZ_QUESTIONS.forEach(q => Object.freeze(q.options));
   - Runtime immutability via `Object.freeze()` prevents tampering.
 
 ### ADR 03: Post-Quiz Answer Reveal vs. Immediate Feedback
-- **Status:** Accepted
 - **Context:** Many basic quiz apps reveal the correct answer as soon as a user clicks an option.
 - **Decision:** Defer all answer explanations to the Results screen.
 - **Consequences:**
@@ -300,7 +293,6 @@ QUIZ_QUESTIONS.forEach(q => Object.freeze(q.options));
   - Simulates a realistic assessment while providing thorough post-assessment reflection.
 
 ### ADR 04: Native Radio Inputs inside Custom Styled Label Cards
-- **Status:** Accepted
 - **Context:** Custom-styled `div` buttons often break native screen reader expectations and form semantics.
 - **Decision:** Keep a native `<input type="radio">` inside every `.option-card` `<label>`, visually hiding the native radio with `.sr-only` styles while letting the label provide custom visuals.
 - **Consequences:**
